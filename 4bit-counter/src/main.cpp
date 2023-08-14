@@ -2,7 +2,7 @@
 
 void binaryCounter(int num);
 
-int led[] = {8, 9, 10, 11};
+int led[] = {11, 10, 9, 8};
 
 void setup()
 {
