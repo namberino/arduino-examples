@@ -21,11 +21,11 @@ void loop()
     duration = pulseIn(echoPin,HIGH);
     distance = (duration / 2) / 29.1;
 
-    if(distance <= 30) 
+    if(distance <= 20) 
         digitalWrite (ledPin, HIGH);
     delay(50);
 
-    if(distance >=30)// If no obstacle is there within 30 cm, the Led should turn off.
+    if(distance >= 20)// if no obstacle is there within 30 cm, the Led should turn off.
         digitalWrite (ledPin, LOW);
     delay(50);
     
