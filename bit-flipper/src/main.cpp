@@ -8,7 +8,7 @@ int dataPin = 9;
 int clockPin = 11;
 int latchPin = 12;
 
-byte data = 0x56;
+byte data = 0x8F;
 
 void setup()
 {
@@ -21,7 +21,7 @@ void setup()
 void loop()
 {
 	updateRegister();
-	Serial.println(data, BIN);
+	Serial.println(data, BIN); // DEC or OCT or HEX
 
 	delay(1000);
 
